@@ -18,19 +18,19 @@ The project consists of two microservices:
 
 1. Employee Service (employee_service)
 
-  - Manages employee information
+    - Manages employee information
 
-  - Exposes REST endpoints for employee CRUD operations
+    - Exposes REST endpoints for employee CRUD operations
 
-  - Port: 8081
+    - Port: 8081
 
 2. Address Service (address-service)
 
-  - Manages address information
+    - Manages address information
 
-  - Exposes REST endpoints for address CRUD operations
+    - Exposes REST endpoints for address CRUD operations
 
-  - Port: 8082
+    - Port: 8082
  
 ---
 
