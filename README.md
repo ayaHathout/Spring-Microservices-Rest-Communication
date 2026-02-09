@@ -5,58 +5,47 @@
 # Spring Cloud Microservices Demo
 
 A comprehensive, step-by-step implementation of Spring Cloud microservices architecture. 
-This project demonstrates real-world microservices patterns with practical examples.
-
----
-
-## 🚀 Implemented Features
-- ✅ REST Communication: RestTemplate vs OpenFeign Client
-- ✅ Service Discovery & Registration: Eureka Server & Clients
-- ✅ Spring Boot Microservices Architecture
-- ✅ PostgreSQL & MySQL integration
-
----
-
-## 📚 Learning Path
-1. Basic RESTful microservices
-2. Service-to-service communication
-3. Centralized service discovery
-4. API Gateway (Coming soon)
-5. Distributed configuration (Coming soon)
-6. Circuit Breaker pattern (Coming soon)
+This project demonstrates real-world microservices patterns through practical, hands-on learning.
 
 ---
 
 ## 🎯 Project Status & Learning Journey
 
-### ✅ **Already Mastered & Implemented**
-- REST Communication Patterns (RestTemplate vs OpenFeign)
-- Service Discovery & Registration with Eureka Server
-- Multi-database microservices architecture
-- Spring Boot microservices best practices
+### ✅ **Mastered & Implemented**
+- **REST Communication Patterns**: RestTemplate vs OpenFeign Client
+- **Service Discovery & Registration**: Eureka Server & Clients  
+- **Multi-Database Architecture**: PostgreSQL & MySQL integration
+- **Spring Boot Microservices**: Best practices and patterns
 
-### 🔄 **Currently Learning & Implementing**
+### 🔄 **Currently Implementing**
 - API Gateway patterns with Spring Cloud Gateway
 - Distributed configuration management
-- [Add your current focus here]
+- Load balancing strategies
 
-### 📚 **Future Learning Path**
-- Circuit Breaker pattern with Resilience4j
-- Distributed tracing with Spring Cloud Sleuth
-- Containerization with Docker & Kubernetes
-- Message queues with RabbitMQ/Kafka
+### 📚 **Learning Roadmap**
+1. ✅ Basic RESTful microservices
+2. ✅ Service-to-service communication  
+3. ✅ Centralized service discovery (Eureka)
+4. 🔄 API Gateway & Load Balancing
+5. 📋 Distributed Configuration
+6. 📋 Circuit Breaker (Resilience4j)
+7. 📋 Distributed Tracing (Spring Cloud Sleuth)
+8. 📋 Containerization (Docker & Kubernetes)
 
 ---
 
-## 🚀 About This Repository
-This is an active learning project where I implement microservices concepts step by step. 
-Each commit represents a learning milestone in my journey to master distributed systems with Spring Cloud.
+## 🏗️ Architecture
+┌─────────────────────────────────────────────────────────────┐
+│ API Gateway (In Progress) │
+├─────────────────────────────────────────────────────────────┤
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ │
+│ │ Employee │ │ Address │ │ Discovery │ │
+│ │ Service │◄────►│ Service │ │ Server │ │
+│ │ (MySQL) │ │ (PostgreSQL)│ │ (Eureka) │ │
+│ └─────────────┘ └─────────────┘ └─────────────┘ │
+└─────────────────────────────────────────────────────────────┘
 
-## 🛠️ Tech Stack
-- Java 21 • Spring Boot 4.x • Spring Cloud
-- Eureka • OpenFeign • RestTemplate
-- PostgreSQL • MySQL • Spring Data JPA
-- Maven • Lombok • ModelMapper
+---
 
 ## 🎯 Purpose
 This repository serves as both a learning resource and a reference implementation for Spring Cloud microservices patterns.
