@@ -1,66 +1,62 @@
-# Spring-Microservices-Rest-Communication
+![Status](https://img.shields.io/badge/Status-Active%20Learning%20Project-blue)
+![Progress](https://img.shields.io/badge/Progress-Continuous-green)
+![Learning](https://img.shields.io/badge/Learning%20Journey-In%20Progress-orange)
 
-A practical example demonstrating **REST-based** communication between Spring Boot microservices using **RestTemplate** and **Feign Client**.
+# Spring Cloud Microservices Demo
 
----
-
-## 📋 Overview
-This project demonstrates two common approaches for synchronous HTTP communication between microservices in a Spring Boot ecosystem:
-
-- RestTemplate - The traditional Spring approach for synchronous REST calls
-
-- Feign Client - A declarative HTTP client that simplifies service-to-service communication
+A comprehensive, step-by-step implementation of Spring Cloud microservices architecture. 
+This project demonstrates real-world microservices patterns through practical, hands-on learning.
 
 ---
 
-## 🏗️ Architecture
-The project consists of two microservices:
+## 📊 Project Status & Learning Journey
 
-1. Employee Service (employee_service)
+### ✅ **Mastered & Implemented**
+- **REST Communication Patterns**: RestTemplate vs OpenFeign Client
+- **Service Discovery & Registration**: Eureka Server & Clients  
+- **Multi-Database Architecture**: PostgreSQL & MySQL integration
+- **Spring Boot Microservices**: Best practices and patterns
 
-    - Manages employee information
+### 🔄 **Currently Implementing**
+- API Gateway patterns with Spring Cloud Gateway
+- Distributed configuration management
+- Load balancing strategies
 
-    - Exposes REST endpoints for employee CRUD operations
-
-    - Port: 8081
-
-2. Address Service (address-service)
-
-    - Manages address information
-
-    - Exposes REST endpoints for address CRUD operations
-
-    - Port: 8082
- 
----
-
-## 🔧 Technologies Used
-- Java 21
-
-- Spring Boot 4.0.2
-
-- Spring Web MVC
-
-- Spring Data JPA
-
-- Spring Cloud OpenFeign - For declarative REST clients
-
-- Maven - For dependency management
-
-- Model Mapper - For reducing boilerplate code
-
-- MySQL - Database for Employee service
-
-- PostgreSQL - Database for Address service
+### 📚 **Learning Roadmap**
+1. ✅ Basic RESTful microservices
+2. ✅ Service-to-service communication  
+3. ✅ Centralized service discovery (Eureka)
+4. 🔄 API Gateway & Load Balancing
+5. 📋 Distributed Configuration
+6. 📋 Circuit Breaker (Resilience4j)
+7. 📋 Distributed Tracing (Spring Cloud Sleuth)
+8. 📋 Containerization (Docker & Kubernetes)
 
 ---
 
-## 🚀 Getting Started
-**Prerequisites**:
-- Java 17 or higher
+## 🏗️ Service Architecture
 
-- Maven 3.6 or higher
+### 🔍 **Service Discovery Layer**
+- **Eureka Server** (Port 8761) - Central registry for all services
 
-- Your favorite IDE (IntelliJ IDEA, Eclipse, or VS Code)
+### 🏢 **Business Services**
+- **Employee Service** (Port 8081) - Manages employee data (MySQL)
+- **Address Service** (Port 8082) - Handles address information (PostgreSQL)
 
-  
+### 🌉 **Gateway Layer** (In Progress)
+- **API Gateway** - Single entry point, routing, and load balancing
+
+---
+
+## 🛠️ Tech Stack
+- **Languages**: Java 21
+- **Frameworks**: Spring Boot 4.x, Spring Cloud
+- **Service Discovery**: Eureka
+- **Communication**: OpenFeign, RestTemplate  
+- **Databases**: PostgreSQL, MySQL, Spring Data JPA
+- **Tools**: Maven, Lombok, ModelMapper
+
+---
+
+## 🎯 Purpose
+This repository serves as both a learning resource and a reference implementation for Spring Cloud microservices patterns.
