@@ -40,8 +40,10 @@ public class AddressServiceRestTemplateClientUsingDiscoveryClient implements Add
         String addressServiceInstanceContextPath = addressServiceInstance.getMetadata().get("context-path");
         System.out.println("Address Service instance context path: " + addressServiceInstanceContextPath);
 
+        String url = "http://" + addressServiceName + addressServiceInstanceContextPath + "/{employee-id}";
+        System.out.println("Address Service url: " + url);
       //  return restTemplate.getForObject(addressServiceInstanceURI + addressServiceInstanceContextPath + "/{employee-id}", AddressResponseDTO.class, employeeId);
 
-        return restTemplate.getForObject(addressServiceName + addressServiceInstanceContextPath + "/{employee-id}", AddressResponseDTO.class, employeeId);
+        return restTemplate.getForObject(url, AddressResponseDTO.class, employeeId);
     }
 }
